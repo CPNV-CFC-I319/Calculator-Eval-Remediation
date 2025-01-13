@@ -26,9 +26,9 @@ git clone <url de votre dépôt forké>
 
 * Résultat obtenu pour test_MathFun
 
-![MathFun](docs/TestStateMathFun.png)
+![MathFun](docs/MathFunTests.png)
 
-4Etudier l'architecture du code
+4. Etudier l'architecture du code
 
 ![diagramme de classes](./docs/class_diagram.png)
 
