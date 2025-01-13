@@ -1,6 +1,6 @@
 # Calculator
 
-Ce dépôt a été créé à des fins pédagogiques. Il permet de s'entraîner à l'utilisation de git-flow tout comme de s'initier à la programmation orientée objet.
+Ce dépôt a été créé à des fins pédagogiques. Il s'agit de la base de travail pour une épreuve sommative.
 
 ---
 
@@ -24,12 +24,15 @@ git clone <url de votre dépôt forké>
 
 3. Exécuter les tests
 
-* Résultat obtenu pour test_MathRequest
+* Résultat obtenu pour test_MathLib
 
-![MathFunTests.png](docs/MathFunTests.png)
+![MathLib](docs/TestStateMathLib.png)
 
+* Résultat obtenu pour test_MathFun
 
-4Etudier l'architecture du code
+![MathFun](docs/TestStateMathFun.PNG)
+
+3. Etudier l'architecture du code
 
 ![diagramme de classes](./docs/class_diagram.png)
 
@@ -41,7 +44,7 @@ git clone <url de votre dépôt forké>
 
 Tentez de faire passer un maximum de tests !
 
-Le "main" ne fait pas parti du livrable attendu.
+Le "main" ne fait pas parti du livrable attendu. A ne pas modifier.
 
 ---
 
@@ -54,6 +57,7 @@ Les critères suivants sont pris en compte:
 * Les classes d'implémentations respectent les normes PEP 8.
 * Le code est fonctionnel.
 * Un maximum de tests est validé.
+* La classe MathRequest n'est pas modifiée.
 
 Note :
 Commentez les lignes de codes qui empêchent l'exécution des tests, mais ne supprimez pas le code.
