@@ -24,15 +24,11 @@ git clone <url de votre dépôt forké>
 
 3. Exécuter les tests
 
-* Résultat obtenu pour test_MathLib
-
-![MathLib](docs/TestStateMathLib.png)
-
 * Résultat obtenu pour test_MathFun
 
-![MathFun](docs/TestStateMathFun.PNG)
+![MathFun](docs/TestStateMathFun.png)
 
-3. Etudier l'architecture du code
+4Etudier l'architecture du code
 
 ![diagramme de classes](./docs/class_diagram.png)
 
