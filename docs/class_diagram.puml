@@ -1,0 +1,46 @@
+@startuml
+'https://plantuml.com/class-diagram
+skinparam classAttributeIconSize 0
+
+class MathRequest{
+ - ope1:float
+ - oper:char
+ - ope2:float
+ - res:float
+
+ + MathRequest(float:ope1, char:oper, float:ope2)
+ + <get> ope1():float
+ + <get> oper():char
+ + <get> ope2():float
+ + <get, set>result():float
+}
+
+class MathLib{
+ + execute(MathRequest: mathRequest):void
+}
+
+class MathFun{
+ + execute(MathRequest: mathRequest):bool|float
+}
+
+class main{
+ -mathRequest:MathRequest
+
+ +main():void
+ -ask_user_input():MathRequest
+ -calculate(MathRequest:mathRequest):void
+ -display_result(MathRequest:mathRequest):void
+ -ask_user_float_input(string:message):float
+}
+
+main .-> MathRequest
+MathLib .-> MathRequest
+MathFun .-> MathRequest
+main .-> MathLib
+main .-> MathFun
+MathLib .-> MathLibException
+OperatorNotSupportedException -|> MathLibException
+MathFun .-> MathFunException
+FunOperatorNotSupportedException -|> MathFunException
+
+@enduml
